@@ -14,9 +14,9 @@ Of course, practical speed of our processors may differ depending on number of c
 # Solution
 
 To compare our operating system I've developed a simple C++ terminal program that does different arithmetic operations (addition, subtracting, multiplication and division) on different data types (int, long, float, double, char). By default, the program 
-perform `30000` operation and does this `10` times to get the fastest attempt.
+perform `30000` simple operations and does this `10` times to get the fastest attempt.
 
-To avoid simplification the program works with three variables which is constantly changing their values. Here how it works for addition:
+To avoid simplification, the program works with three variables which is constantly changing their values depending on each other. Here how it works for addition:
 
 ```cpp
 for (int i=0; i<iterations; i++)  
@@ -27,7 +27,7 @@ for (int i=0; i<iterations; i++)
     }
 ```
 
-For the division I used a little modified method to avoid the `Floating point exception` which occur when some number is divided by a rounded to zero integer.
+For the division I used a little modified method to avoid the `Floating point exception` which occurs when some number is divided by a rounded to zero integer.
 
 
 ```cpp
@@ -38,8 +38,6 @@ for (int i=3; i<=iterations+3;i++)
         b = i / c;
     }
 ```
-
-More comments in the code.
 
 
 # Usage
