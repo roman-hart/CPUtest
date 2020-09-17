@@ -1,5 +1,5 @@
 /******************************************************************************
-Roman Tsaruk, K-23
+Roman Ts., K-23, https://github.com/zork0/CPUtest/
 *******************************************************************************/
 #include <chrono> 
 #include <iostream>
@@ -64,7 +64,7 @@ template <typename T>
 double operation_test(int f, T a, T b, T c)
 {
     /* f - number of particular function from (*functptr). 
-    Make sure that there is function and sign - array signs[] from type_testing() - for each number f */
+    Make sure that there is a function and a sign - array signs[] from type_testing() - for each number f */
     
     void (*functptr[])(T, T, T) = {addition, substracting, multiplication, division};
     
