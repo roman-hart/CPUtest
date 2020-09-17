@@ -5,16 +5,16 @@
 
 # Problem
 
+General conditions were given <a href="https://sites.google.com/site/byvkyiv1/arhiteom_stac/arhiteom_lab_01">here</a>.
+
 Productivity of our computer systems directly depends on the processor. Processors are usually comparing by their speed which is measured in GHz (millions of operations per second). By operation, we mean simple logical and arithmetical operations. 
 
-Of course, practical speed of our processors way differ according to number of currently available threads of the processor, operating system settings, the task we perform, etc. So one of the way to measure actual processor speed is to test it, for example, on arithmetic operations. But in this case we need to be careful to avoid compiler simplification because our computer system can slip through some task that we've built for processor to test it.
-
-General conditions were given <a href="https://sites.google.com/site/byvkyiv1/arhiteom_stac/arhiteom_lab_01">here</a>.
+Of course, practical speed of our processors may differ depending on number of currently available threads of the processor, operating system settings, the task it performs, etc. So one of the way to measure actual processor speed is to test it, for example, on the nuber of particular arithmetic operations. But in this case we need to be careful to avoid compiler simplification because our computer system can just slip through some task that we've built for processor to test it.
 
 # Solution
 
-To compare our operating system I've developed a simple C++ terminal program that perform different arithmetic operations (addition, subtracting, multiplication and division) on different data types (int, long, float, double, char). By default, the program 
-does `30000` operation for `10` times to get the fastest attempt.
+To compare our operating system I've developed a simple C++ terminal program that does different arithmetic operations (addition, subtracting, multiplication and division) on different data types (int, long, float, double, char). By default, the program 
+perform `30000` operation and does this `10` times to get the fastest attempt.
 
 To avoid simplification the program works with three variables which is constantly changing their values. Here how it works for addition:
 
