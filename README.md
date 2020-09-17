@@ -1,4 +1,4 @@
-<h1 align="center">CPUtest</h1>
+<h1 align="center">CPUtest - my first C++ program</h1>
 <p align="center"><i>Simple C++ CPU tester to measure your processor speed in arithmetic operations per second.</i></p>
 <p align="center"><i>Developed as a laboratory project for <a href="http://www.univ.kiev.ua/en">Taras Shevchenko National University of Kyiv</a></i></p>
 <br>
@@ -44,7 +44,7 @@ More comments in the code.
 
 # Usage
 
-Compile the file and run it. Then you should get this message with results in your terminal.
+Compile the file and run it. Then you should get this message with results in your terminal:
 
 ```
 +    int       363M      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX         99%     
@@ -68,3 +68,4 @@ Compile the file and run it. Then you should get this message with results in yo
 *    char      282M      XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX                    77%     
 /    char      90M       XXXXXXXXXXXX                                              24%   
 ```
+In the third column you can see the processor speed (in Millions of operations per second - simmilar to GHz).
