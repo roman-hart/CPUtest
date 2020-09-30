@@ -67,3 +67,25 @@ Compile the file and run it. Then you should get this message with results in yo
 /    char      90M       XXXXXXXXXXXX                                              24%   
 ```
 In the third column you can see the processor speed (in Millions of operations per second - simmilar to GHz).
+
+
+# In addition
+
+There was a recommendation to increase the number of operations in each cycle (like it's shown below). In this case other loop operations (like `i++` which I don't measure) would take a smaller portion of time than the execution of the loop body. After some tests I've found out that, indeed, average arithmetic operation speed in the previous compact version was less on 5-10%, which leads us to the fact that each set of additional (outer of the body) operations may cost us approximately a half of time of the tested arithmetic operation. However, the changes on some compilers were not visible.
+
+```cpp
+for (int i=0; i<iterations; i++)  
+    {
+        a = b + c;
+        b = c + a;
+        c = a + b;
+        
+        a = b + c;
+        b = c + a;
+        c = a + b;
+        
+        a = b + c;
+        b = c + a;
+        c = a + b;
+    }
+```
